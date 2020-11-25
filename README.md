@@ -15,13 +15,13 @@ docker image for NCL, NCO and CDO, based on ubuntu
    docker container run -it nclncocdo:v1
    ```
 4. use NCL, NCO, CDO in the command line
-### pull from DockerHub
+### or pull from DockerHub
 1. install docker
 2. `docker pull theropod/nclncocdo:latest` to pull the image
     or `docker run -it theropod/nclncocdo:latest` to run it directly
-## about Ubuntu:latest
+## About Ubuntu:latest
 Dockerfile to install NCL on ubuntu:20.04. Ubuntu 20.04 has removed support for libgfortran3, so 2 deb packages from 18.04 have to be downloaded and installed (see Dockerfile for further info)
-## how to run x11 windows
+## How to run x11 windows
 you can't directly run a X11 window inside docker, here is an alternative approach using x11docker:
 - pull image
 - install [x11docker](https://github.com/mviereck/x11docker#shortest-way-for-first-installation)
